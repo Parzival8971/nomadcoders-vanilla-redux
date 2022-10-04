@@ -8,7 +8,7 @@ const ToDo = ({ text, id }) => {
 
   return (
     <li>
-      <Link to={`/${id}`}>{text}</Link>
+      <Link to={`/${id}`}>{text}</Link>{' '}
       <button onClick={() => dispatch(deleteToDo(id))}>DEL</button>
     </li>
   );
